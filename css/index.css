@@ -1,1 +1,24 @@
+@charset "utf-8";
 
+.intro {
+    padding: 3em 0;
+}
+
+.intro p {
+    margin-top: 1em;
+}
+
+.roulette-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-top: 2em;
+    border: solid 3px #87CEEB;
+    border-radius: 8px;
+}
+
+#roulette {
+    font-size: 1.3em;
+    color: #494949;
+}
