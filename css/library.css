@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/* ===== 自習室ページ ===== */
+
+.library-page {
+    padding-top: 2em;
+}
+
+.library-hero {
+    margin-bottom: 2.5em;
+}
+
+.library-hero p {
+    margin-top: 1em;
+}
+
+/* ===== セクション見出し ===== */
+
+.section-heading {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    color: #494949;
+}
+
+/* ===== 自習スポット一覧 ===== */
+
+.study-space-list {
+    display: grid;
+    gap: 1.5em;
+}
+
+.study-space-card {
+    padding: 1.5em;
+    border: solid 1px #d8dce8;
+    border-left: solid 6px #4f6f9f;
+    border-radius: 10px;
+    background-color: #fbfcff;
+    box-shadow: 0 4px 12px rgba(73, 73, 73, 0.08);
+}
+
+.study-space-card.featured {
+    border-left-color: #2f5f8f;
+    background-color: #f6f9ff;
+    box-shadow: 0 6px 16px rgba(73, 73, 73, 0.12);
+}
+
+.study-space-card.featured .study-space-header h4::after {
+    content: "一番おすすめ";
+    display: inline-block;
+    margin-left: 0.75em;
+    padding: 0.15em 0.6em;
+    border-radius: 999px;
+    font-size: 0.75em;
+    color: #ffffff;
+    background-color: #2f5f8f;
+}
+
+/* ===== カード見出し ===== */
+
+.study-space-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 0.75em;
+    padding-bottom: 0.5em;
+    border-bottom: dashed 1px #b8c4d8;
+}
+
+.study-space-header h4 {
+    font-size: 1.1em;
+    color: #394867;
+}
+
+.study-type {
+    padding: 0.2em 0.7em;
+    border-radius: 999px;
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4f6f9f;
+    white-space: nowrap;
+}
+
+.study-space-card p {
+    margin-bottom: 1em;
+}
+
+/* ===== 特徴タグ ===== */
+
+.spot-tags {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75em;
+}
+
+.spot-tags > div {
+    padding: 0.75em;
+    border-radius: 8px;
+    background-color: #eef3fb;
+}
+
+.spot-tags dt {
+    margin-bottom: 0.25em;
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #394867;
+}
+
+.spot-tags dd {
+    font-size: 0.95em;
+}
+
+/* ===== スマホ対応 ===== */
+
+@media (max-width: 800px) {
+    .library-page {
+        padding-top: 1.5em;
+    }
+
+    .study-space-card {
+        padding: 1.2em;
+    }
+
+    .study-space-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .spot-tags {
+        grid-template-columns: 1fr;
+    }
+}
