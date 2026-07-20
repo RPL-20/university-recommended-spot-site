@@ -3,23 +3,30 @@
   color: #494949;
   background: transparent;
   border-left: solid 5px #87CEEB;
+  margin-top: 20px;
 }
 
 .access{
   padding: 0.25em 0.5em;
   border-bottom: solid 3px #87CEEB;
+  margin-top: 20px;
 }
 
 .map {
     display: block;
     width: 100%;
     height: 400px;
+    margin-top: 20px;
 }
 
 body {
   padding-left: 20%;
   padding-right: 20%;
   color: #494949;
+}
+
+.access-text{
+  margin-top: 10px;
 }
 
 @media (max-width: 800px) {
