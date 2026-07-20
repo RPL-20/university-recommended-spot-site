@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/* ===== トイレページ ===== */
+
+.toilet-page {
+    padding-top: 2em;
+}
+
+.toilet-hero {
+    margin-bottom: 2.5em;
+}
+
+.toilet-hero p {
+    margin-top: 1em;
+}
+
+/* ===== セクション見出し ===== */
+
+.section-heading {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    color: #494949;
+}
+
+/* ===== トイレ一覧 ===== */
+
+.toilet-list {
+    display: grid;
+    gap: 1.5em;
+}
+
+.toilet-card {
+    position: relative;
+    padding: 1.5em;
+    border: solid 1px #e4d6c3;
+    border-radius: 12px;
+    background-color: #fffaf3;
+    box-shadow: 0 4px 12px rgba(73, 73, 73, 0.08);
+}
+
+.toilet-card h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.4em;
+    font-size: 1.1em;
+    color: #494949;
+    border-bottom: solid 2px #87CEEB;
+}
+
+.toilet-card h4::before {
+    content: "WC";
+    padding: 0.15em 0.5em;
+    border-radius: 999px;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #8b6f47;
+}
+
+.toilet-card p {
+    margin-bottom: 1em;
+}
+
+/* ===== 特徴表示 ===== */
+
+.toilet-card dl {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75em;
+}
+
+.toilet-card dl > div {
+    padding: 0.4em 0.75em;
+    border-radius: 999px;
+    background-color: #f0f9fc;
+}
+
+.toilet-card dl > div.warning {
+    background-color: #fff0f0;
+}
+
+.toilet-card dt,
+.toilet-card dd {
+    display: inline;
+    font-size: 0.9em;
+}
+
+.toilet-card dt {
+    font-weight: bold;
+}
+
+.toilet-card dt::after {
+    content: "：";
+}
+
+/* ===== スマホ対応 ===== */
+
+@media (max-width: 800px) {
+    .toilet-page {
+        padding-top: 1.5em;
+    }
+
+    .toilet-card {
+        padding: 1.2em;
+    }
+
+    .toilet-card dl {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .toilet-card dl > div {
+        border-radius: 8px;
+    }
+}
