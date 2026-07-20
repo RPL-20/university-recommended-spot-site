@@ -3,6 +3,7 @@
   color: #494949;/*文字色*/
   background: transparent;/*背景透明に*/
   border-left: solid 5px #87CEEB;/*左線*/
+  margin-top: 20px;
 }
 
 .cafe-image{
@@ -12,6 +13,8 @@
 
     width: 100%;
     height: auto;
+
+    margin-top: 20px;
 }
 
 .cafe-name{
