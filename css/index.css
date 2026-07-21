@@ -10,6 +10,7 @@
 
 .roulette-box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 120px;
@@ -21,4 +22,20 @@
 #roulette {
     font-size: 1.3em;
     color: #494949;
+}
+
+#roulette-button {
+    margin-top: 1em;
+    padding: 0.6em 1.2em;
+    border: 0;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #4f6f9f;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#roulette-button:hover {
+    background-color: #394867;
 }

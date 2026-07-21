@@ -1,13 +1,19 @@
-var pages = [
-    "toilet.html",
-    "cafeteria.html",
-    "library.html",
-    "access.html"
-];
+window.addEventListener('load', function () {
+    var pages = [
+        "toilet.html",
+        "cafeteria.html",
+        "library.html",
+        "access.html"
+    ];
+    var roulette = document.querySelector('#roulette');
+    var button = document.querySelector('#roulette-button');
 
-var number = Math.floor(Math.random() * pages.length);
+    button.addEventListener('click', function () {
+        var number = Math.floor(Math.random() * pages.length);
+        roulette.textContent = '抽選中...';
 
-//「抽選中...」の文字が一瞬で消えないよう、3秒待ってから遷移する
-setTimeout(function () {
-    location.href = pages[number];
-}, 3000);
+        setTimeout(function () {
+            location.href = pages[number];
+        }, 1000);
+    });
+});
