@@ -1,8 +1,4 @@
 .title {
-  padding: 0.25em 0.5em;
-  color: #494949;
-  background: transparent;
-  border-left: solid 5px #87CEEB;
   margin-top: 20px;
 }
 
@@ -19,19 +15,6 @@
     margin-top: 20px;
 }
 
-body {
-  padding-left: 20%;
-  padding-right: 20%;
-  color: #494949;
-}
-
 .access-text{
   margin-top: 10px;
-}
-
-@media (max-width: 800px) {
-    body {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
 }
