@@ -1,8 +1,4 @@
 .title {
-  padding: 0.25em 0.5em;/*上下 左右の余白*/
-  color: #494949;/*文字色*/
-  background: transparent;/*背景透明に*/
-  border-left: solid 5px #87CEEB;/*左線*/
   margin-top: 20px;
 }
 
@@ -51,6 +47,7 @@
     display: flex;
     justify-content: center; /* 中央揃え */
     gap: 10px; /* 画像間の隙間 */
+    margin-top: 10px;
 }
 
 .image-container {
@@ -70,20 +67,35 @@
     font-size: 14px;
 }
 
+.top {
+  margin-top: 10px;
+}
 
-body {
-  padding-left: 30%;
-  padding-right: 30%;
-  color: #494949;/*文字色*/
+
+
+.ml14 {
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+
+.ml14 .letter {
+  display: inline-block;
+  line-height: 1em;
+  font-weight: bold;
 }
 
 
 
 @media (max-width: 800px) {
-  body {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
   .image-row{
     display: block;
   }
